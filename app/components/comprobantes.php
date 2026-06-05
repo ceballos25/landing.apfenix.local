@@ -10,8 +10,8 @@ $whatsapp     = e(config('whatsapp'));
 <section class="comprobantes-section section-block" id="comprobantes" aria-label="Comprobantes verificados">
     <div class="container">
         <div class="section-header text-center">
-            <h2 class="section-title">Pagos reales, publicados hoy</h2>
-            <p class="section-subtitle">Comprobantes de bendecidos recientes en Colombia.</p>
+            <h2 class="section-title">Algunos de nuestros bendecidos</h2>
+            <p class="section-subtitle">Comprobantes recientes de la comunidad en Colombia.</p>
         </div>
 
         <?php if (!empty($comprobantes)): ?>
