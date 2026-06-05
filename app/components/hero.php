@@ -39,7 +39,7 @@ $destacado    = $comprobantes[0] ?? null;
                     </a>
 
                     <div class="hero-trust-badges">
-                        <div class="trust-badge"><i class="bi bi-shield-check"></i> Nequi & Bancolombia</div>
+                        <div class="trust-badge"><i class="bi bi-patch-check"></i> Comprobantes verificados</div>
                         <div class="trust-badge"><i class="bi bi-people-fill"></i> +850 en el grupo</div>
                     </div>
                 </div>
