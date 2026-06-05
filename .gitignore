@@ -1,0 +1,17 @@
+# Entorno
+.env
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Storage temporal
+/storage/cache/
+/storage/logs/

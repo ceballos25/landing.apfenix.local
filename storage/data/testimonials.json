@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Valentina Cruz",
+        "city": "Medellín",
+        "text": "Vi los comprobantes, entré al grupo y en una semana ya viví mi primera experiencia. Todo transparente.",
+        "rating": 5
+    },
+    {
+        "name": "Miguel Ángel Torres",
+        "city": "Cali",
+        "text": "Los pagos son reales. Nequi, Bancolombia, todo publicado. Eso me dio confianza de inmediato.",
+        "rating": 5
+    },
+    {
+        "name": "Camila Ortega",
+        "city": "Barranquilla",
+        "text": "Entré por curiosidad y me quedé. Comunidad activa, respuestas rápidas y cero complicaciones.",
+        "rating": 5
+    }
+]

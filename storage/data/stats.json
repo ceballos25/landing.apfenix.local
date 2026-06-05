@@ -1,0 +1,22 @@
+[
+    {
+        "value": "850+",
+        "label": "En la comunidad",
+        "icon": "bi-people-fill"
+    },
+    {
+        "value": "240+",
+        "label": "Dinámicas realizadas",
+        "icon": "bi-lightning-fill"
+    },
+    {
+        "value": "95+",
+        "label": "Bendecidos este mes",
+        "icon": "bi-heart-fill"
+    },
+    {
+        "value": "4.9★",
+        "label": "Valoración",
+        "icon": "bi-shield-check"
+    }
+]
