@@ -756,7 +756,7 @@ a {
 
 .comprobante-amount-badge {
     position: absolute;
-    bottom: 10px;
+    bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
     background: var(--color-primary);
