@@ -14,6 +14,9 @@ $description    = e(config('seo.description'));
 $keywords       = e(config('seo.keywords'));
 $ogImage        = e(url(config('seo.og_image')));
 $whatsappUrl    = e(config('whatsapp'));
+$pixelId        = preg_replace('/\D/', '', (string) config('analytics.meta_pixel', ''));
+$gaId           = trim((string) config('analytics.google', ''));
+$gaId           = str_starts_with($gaId, 'G-') && !str_contains($gaId, 'XXXX') ? $gaId : '';
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -77,8 +80,8 @@ $whatsappUrl    = e(config('whatsapp'));
         }
     </style>
 
-    <?php if ($pixelId = config('analytics.meta_pixel')): ?>
-    <!-- Meta Pixel -->
+    <?php if ($pixelId !== ''): ?>
+    <!-- Meta Pixel Code -->
     <script>
         !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
         n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
@@ -88,9 +91,15 @@ $whatsappUrl    = e(config('whatsapp'));
         fbq('init', '<?= e($pixelId) ?>');
         fbq('track', 'PageView');
     </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=<?= e($pixelId) ?>&ev=PageView&noscript=1"
+             alt="">
+    </noscript>
+    <!-- End Meta Pixel Code -->
     <?php endif; ?>
 
-    <?php if ($gaId = config('analytics.google')): ?>
+    <?php if ($gaId !== ''): ?>
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=<?= e($gaId) ?>"></script>
     <script>
